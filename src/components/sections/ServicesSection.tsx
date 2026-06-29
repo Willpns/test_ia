@@ -4,9 +4,9 @@ import { useInView } from "@/hooks/useInView";
 
 const WEB_SERVICES = [
   {
-    id: "svc-frontend",
-    title: "Front-end sur Mesure",
-    desc: "Des interfaces React / Next.js rapides, soignées et accessibles. On code au pixel près, avec des animations légères et une compatibilité navigateurs testée.",
+    id: "svc-vitrine",
+    title: "Sites Vitrines & Landing Pages",
+    desc: "Des sites modernes pour présenter votre activité, vos services ou vos produits. Optimisés pour mobile, rapides (Next.js / Tailwind) et structurés pour le SEO (référencement naturel).",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
         <rect x="2" y="3" width="20" height="14" rx="2" />
@@ -15,24 +15,27 @@ const WEB_SERVICES = [
     ),
   },
   {
-    id: "svc-backend",
-    title: "Back-end & Architecture",
-    desc: "APIs REST ou GraphQL solides, bases de données bien pensées, architecture qui tient la charge. Node.js, Python, PostgreSQL — on choisit le bon outil pour le bon job.",
+    id: "svc-ecommerce",
+    title: "E-commerce & Boutiques en ligne",
+    desc: "Création de boutiques en ligne fluides et performantes avec Shopify ou Stripe pour encaisser vos paiements de manière sécurisée et gérer votre catalogue simplement.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-        <ellipse cx="12" cy="5" rx="9" ry="3" />
-        <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+        <circle cx="9" cy="21" r="1" />
+        <circle cx="20" cy="21" r="1" />
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
       </svg>
     ),
   },
   {
-    id: "svc-api",
-    title: "API & Intégrations",
-    desc: "On connecte vos outils entre eux : Stripe, CRM, ERP, webhooks. Votre écosystème technique fonctionne comme un tout, pas en silos.",
+    id: "svc-apps",
+    title: "Applications Web & Plateformes",
+    desc: "Développement d'outils internes, de portails clients ou de tableaux de bord sur mesure. Nous utilisons Supabase ou Firebase pour gérer les bases de données efficacement.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-        <path d="M8 9l3 3-3 3M13 15h3" />
-        <rect x="2" y="4" width="20" height="16" rx="3" />
+        <rect x="3" y="3" width="7" height="9" />
+        <rect x="14" y="3" width="7" height="5" />
+        <rect x="14" y="12" width="7" height="9" />
+        <rect x="3" y="16" width="7" height="5" />
       </svg>
     ),
   },
@@ -40,19 +43,19 @@ const WEB_SERVICES = [
 
 const AI_SERVICES = [
   {
-    id: "svc-agents",
-    title: "Agents & LLM",
-    desc: "Agents autonomes basés sur les meilleurs modèles du marché. Extraction de données, génération de contenu, analyse de documents — pour automatiser ce qui peut l'être.",
+    id: "svc-chatbots",
+    title: "Chatbots & Assistants IA",
+    desc: "Intégration d'assistants virtuels intelligents (type OpenAI/ChatGPT) connectés à vos données pour répondre automatiquement aux questions récurrentes de vos clients.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
       </svg>
     ),
   },
   {
-    id: "svc-automation",
-    title: "Automatisation Métier",
-    desc: "Vous avez des tâches répétitives qui prennent des heures ? On les automatise. Traitement de documents, orchestration de workflows, scripts intelligents.",
+    id: "svc-workflows",
+    title: "Automatisation de Workflows",
+    desc: "Connexion de vos outils (Gmail, Notion, CRM, Stripe) via Make ou Zapier pour automatiser vos tâches répétitives (création automatique de factures, alertes, etc.).",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
         <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
@@ -60,12 +63,16 @@ const AI_SERVICES = [
     ),
   },
   {
-    id: "svc-data",
-    title: "Traitement de Données",
-    desc: "Vos données ont de la valeur, encore faut-il pouvoir les exploiter. On crée des pipelines clairs et des tableaux de bord qui servent vraiment.",
+    id: "svc-scripts",
+    title: "Scripts & Traitement de Données",
+    desc: "Écriture de scripts intelligents (Python/Node.js) pour nettoyer vos fichiers, extraire des informations de documents complexes ou scrapper des données publiques.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-        <path d="M7 12l3-3 3 3 4-4" /><rect x="2" y="3" width="20" height="18" rx="2" />
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+        <polyline points="14 2 14 8 20 8" />
+        <line x1="16" y1="13" x2="8" y2="13" />
+        <line x1="16" y1="17" x2="8" y2="17" />
+        <polyline points="10 9 9 9 8 9" />
       </svg>
     ),
   },

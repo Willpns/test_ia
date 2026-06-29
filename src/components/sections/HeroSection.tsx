@@ -266,7 +266,6 @@ export default function HeroSection() {
             </h1>
           </div>
 
-          {/* Subtitle */}
           <p style={{
             color: "rgba(226,232,240,0.8)",
             fontSize: "1.1rem",
@@ -274,7 +273,7 @@ export default function HeroSection() {
             maxWidth: 480,
             marginBottom: "2.5rem",
           }}>
-            On conçoit vos applications web et on y intègre de l&apos;IA quand ça a du sens — agents, automatisation, traitement de données. Du concret, pas du gadget.
+            On conçoit vos sites vitrines, boutiques e-commerce et applications web sur mesure, en y intégrant de l&apos;IA et des automatisations simples pour vous faire gagner du temps.
           </p>
 
           {/* CTAs */}
