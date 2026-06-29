@@ -44,8 +44,8 @@ const WEB_SERVICES = [
 const AI_SERVICES = [
   {
     id: "svc-chatbots",
-    title: "Chatbots & Assistants IA",
-    desc: "Intégration d'assistants virtuels intelligents (type OpenAI/ChatGPT) connectés à vos données pour répondre automatiquement aux questions récurrentes de vos clients.",
+    title: "Assistant Client Intelligent 24/7",
+    desc: "Ne laissez plus un client sans réponse, même à 2h du matin. Contrairement aux robots rigides, cet assistant est entraîné sur vos données (FAQ, fiches produits). Il conseille vos visiteurs et résout leurs doutes en temps réel. Bénéfice clé : Réduction de 40% des tickets support et augmentation des ventes.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -53,19 +53,21 @@ const AI_SERVICES = [
     ),
   },
   {
-    id: "svc-workflows",
-    title: "Automatisation de Workflows",
-    desc: "Connexion de vos outils (Gmail, Notion, CRM, Stripe) via Make ou Zapier pour automatiser vos tâches répétitives (création automatique de factures, alertes, etc.).",
+    id: "svc-search",
+    title: "Moteur de Recherche Prédictif",
+    desc: "Vos visiteurs ne trouvent pas vos produits avec une recherche classique ? Notre moteur IA comprend l'intention, les synonymes et les fautes. Si un client cherche 'tenue mariage été', il trouvera vos costumes légers sans que vous ayez à taguer manuellement vos produits. Bénéfice clé : Amélioration de l'expérience et hausse du panier moyen.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        <path d="M11 8v3l2 2" />
       </svg>
     ),
   },
   {
-    id: "svc-scripts",
-    title: "Scripts & Traitement de Données",
-    desc: "Écriture de scripts intelligents (Python/Node.js) pour nettoyer vos fichiers, extraire des informations de documents complexes ou scrapper des données publiques.",
+    id: "svc-catalog",
+    title: "Automatisation de Catalogue",
+    desc: "Divisez par dix le temps de gestion de votre site. Ajoutez un produit, l'IA s'occupe du reste : rédaction SEO instantanée, traduction ultra-fidèle, et description des images pour l'accessibilité. Bénéfice clé : Gain de temps massif, ce qui prenait des jours se fait en quelques secondes.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
