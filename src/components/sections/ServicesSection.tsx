@@ -17,7 +17,7 @@ const WEB_SERVICES = [
   {
     id: "svc-ecommerce",
     title: "E-commerce & Boutiques en ligne",
-    desc: "Création de boutiques en ligne fluides et performantes avec Shopify ou Stripe pour encaisser vos paiements de manière sécurisée et gérer votre catalogue simplement.",
+    desc: "Création de boutiques en ligne fluides et performantes avec paiement sécurisé via Stripe, gestion de catalogue et suivi de commandes intégrés.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
         <circle cx="9" cy="21" r="1" />
@@ -29,7 +29,7 @@ const WEB_SERVICES = [
   {
     id: "svc-apps",
     title: "Applications Web & Plateformes",
-    desc: "Développement d'outils internes, de portails clients ou de tableaux de bord sur mesure. Nous utilisons Supabase ou Firebase pour gérer les bases de données efficacement.",
+    desc: "Développement d'outils internes, de portails clients ou de tableaux de bord sur mesure. On choisit la stack la plus adaptée à votre besoin.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
         <rect x="3" y="3" width="7" height="9" />
